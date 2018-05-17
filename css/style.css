@@ -135,11 +135,11 @@ button {
 .text-right {
 	text-align: right;
 }
-/* ===== Default classes start ===== */
+/* ===== Default classes end ===== */
 
 /* ===== Default component start ===== */
 .default-section {
-	padding: 135px 0;
+	padding: 140px 0;
 }
 .default-text {
 	font-family: 'open_sanslight', sans-serif;
@@ -148,30 +148,47 @@ button {
 }
 .btn {
 	display: inline-block;
-	color: #000;
-	font-size: 15px;
+	color: #fff;
+	font-size: 14px;
 	font-family: 'open_sansregular', sans-serif;
 	text-transform: uppercase;
+	border-radius: 3px;
+	letter-spacing: .2em;
 	line-height: 1em;
 	cursor: pointer;
 }
-.btn-default {
-	background-color: #323232;
-	padding: 14px 40px;
+
+/* dark button style start, both the same */
+.btn.btn-default {
+	background-color: rgba(0, 0, 0, .8);
+	padding: 11px 16px;
 }
-.btn-large {
-	background-color: #cfcfcf;
+/* dark button style end */
+
+/* read more link style start */
+.btn.btn-small {
+	font-size: 11px;
+	padding: 8px 14px;
+	background-color: rgba(255, 255, 255, .8);
+	color: #777;
 }
-.btn-small {
-	background-color: #cfcfcf;
+/* read more link style end */
+
+/* lightgrey button style start, both the same */
+.btn.btn-medium {
+	padding: 13px 40px;
+	background-color: rgba(255, 255, 255, .8);
+	color: #111;
 }
+/* lightgrey button style end */
+
 .title {
-	font-size: 1.2rem;
+	font-size: 18px;
 	color: #111;
 	font-weight: normal;
 	letter-spacing: .5em;
 	text-transform: uppercase;
-	margin-bottom: 75px;
+	margin-bottom: 85px;
 	font-family: 'dosisregular', sans-serif;
 }
 .title.title-light {
@@ -195,6 +212,7 @@ button {
 	padding: 25px 0;
 	overflow: hidden;
 }
+/* header fixed position and transparent background must to be inspect later, issue scroll down */
 .header .logo {
 	float: left;
 	line-height: 0;
@@ -214,9 +232,10 @@ button {
 	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: .3em;
-	color: #fff;
+	color: rgba(255, 255, 255, .75);
 }
 /* header style end */
+
 /* main style start */
 .inner {
 	position: relative;
@@ -231,11 +250,11 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	color: #fff;
 }
 .inner-content h1 {
 	font-family: 'dosisregular', sans-serif;
 	font-size: 30px;
+	color: rgba(255, 255, 255, .9);
 	line-height: 1;
 	margin-bottom: 100px;
 	letter-spacing: 1.7em;
@@ -245,9 +264,11 @@ button {
 .inner-content p {
 	font-family: 'open_sanslight', sans-serif;
 	font-size: 19px;
+	color: rgba(255, 255, 255, .68);
 	line-height: 1;
 }
 /* main style end */
+
 /* about studio start */
 .about-studio .row + .row {
 	margin-top: 100px;
@@ -255,6 +276,9 @@ button {
 .about-studio blockquote {
 	font-size: 24px;
 	line-height: 38px;
+}
+.about-studio blockquote p {
+	margin-bottom: 10px;
 }
 .about-studio blockquote span {
 	font-size: 11px;
@@ -276,22 +300,45 @@ button {
 	font-size: 12px;
 }
 /* about studio end */
+
 /* lets talk start */
 .lets-talk-wrapper {
 	padding-top: 140px;
 	padding-bottom: 140px;
 }
+.lets-talk .title {
+	line-height: 26px;
+	margin-bottom: 30px;
+}
 .lets-talk-img {
 	margin-top: -32px;
 }
 .lets-talk .default-text {
-	color: rgba(255, 255, 255, .7)
+	color: rgba(255, 255, 255, .7);
+	margin-bottom: 40px;
 }
 /* lets talk end */
+
 /* why chose us start */
+.why-choose-us .row + .row {
+	margin-top: 85px;
+}
 .advantage-icon {
-	font-size: 20px;
-	color: #000;
+	font-size: 48px;
+	line-height: 1em;
+	color: #111;
+}
+.advantage-title {
+	font-family: 'dosisregular', sans-serif;
+	font-size: 14px;
+	letter-spacing: .4em;
+	line-height: 1em;
+	color: #111;
+	text-transform: uppercase;
+	padding: 35px 0;
+}
+.why-choose-us .default-text {
+	font-size: 14px;
 }
 /* why chose us end */
 /* ===== Custom style end ===== */
