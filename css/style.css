@@ -63,6 +63,9 @@ button {
 	border: none;
 	cursor: pointer;
 }
+textarea {
+	resize: vertical;
+}
 /* ===== Reset end ===== */
 
 /* ===== Grid layout start ===== */
@@ -135,6 +138,11 @@ button {
 }
 .text-right {
 	text-align: right;
+}
+.mx-auto {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* ===== Default classes end ===== */
 
@@ -210,6 +218,42 @@ button {
 	font-family: 'open_sansregular', sans-serif;
 	text-transform: uppercase;
 	margin-top: 10px;
+}
+.rhomb-icon {
+	display: inline-block;
+	text-align: center;
+	font-size: .8rem;
+	width: 23px;
+	line-height: 23px;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+.rhomb-icon > * {
+	transform: rotate(-45deg);
+}
+.rhomb-icon > .fa-phone {
+	transform: rotate(45deg);
+}
+.rhomb-icon.black-icon {
+	color: #fff;
+	background-color: #111;
+}
+.form-control {
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	height: 40px;
+	font-size: .8rem;
+	/* fonf-family */
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #777;
+	padding: 0 13px;
+	background-color: #fff;
+}
+textarea.form-control {
+	min-height: 90px;
+	padding-top: 10px;
 }
 /* ===== Default component end ===== */
 
@@ -501,4 +545,56 @@ button {
 	transform: scale(1.3);
 }
 /* reviews carousel end */
+
+/* contacts start */
+.contact-item .rhomb-icon {
+	vertical-align: middle;
+}
+.contact-item-content {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.contact-item-content span {
+	display: block;
+}
+.form-row {
+	margin: 0 -5px;
+}
+.form-col {
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+.contact-form {
+	margin-top: 80px;
+}
+.contact-form .form-control + .form-control {
+	margin-top: 10px;
+}
+/* contacts end */
+/* Map start */
+.map-container {
+	position: relative;
+}
+#map {
+	width: 100%;
+	height: 410px;
+}
+.on-map-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .9);
+}
+.map-container:hover .on-map-block {
+	opacity: 0;
+}
+/* Map end */
+/* latest news:  wrapper (h.title + a:float right), row col-4*3 img(a) h(a) author default-text small button*/
+/* stay informe: bgc: grey (class new create), h3, form input(max-width) button, icon + text */
+/* footer ---> paddin, logo, ul .rhomb-icon.transparent-icon bgc:transparent border:black, hover ---> icon black, color: white, icon white, wrapper - 2 span */
 /* ===== Custom style end ===== */

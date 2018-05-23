@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Landing</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<!-- Slick style -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
 	<!-- Custom icons style -->
@@ -598,6 +600,96 @@
 			<!-- /.reviews-carousel -->
 		</div>
 		<!-- /.reviews bg-black -->
+		<div class="default-section contacts">
+			<div class="container">
+				<h3 class="title text-center">Contacts</h3>
+				<div class="row">
+					<div class="col col-8 mx-auto">
+						<div class="row">
+							<div class="col col-4">
+								<div class="contact-item">
+									<div class="rhomb-icon black-icon">
+										<i class="fas fa-phone"></i>
+									</div>
+									<!-- /.rhomb-icon black-icon -->
+									<div class="contact-item-content">
+										<span class="contact-title">Call us</span>
+										<span class="contact-data">+380973858207</span>
+									</div>
+									<!-- /.contact-item-content -->
+								</div>
+								<!-- /.contact-item -->
+							</div>
+							<!-- /.col .col-4 -->
+							<div class="col col-4">
+								<div class="contact-item">
+									<div class="rhomb-icon black-icon">
+										<i class="fas fa-phone"></i>
+									</div>
+									<!-- /.rhomb-icon black-icon -->
+									<div class="contact-item-content">
+										<span class="contact-title">Call us</span>
+										<span class="contact-data">+380973858207</span>
+									</div>
+									<!-- /.contact-item-content -->
+								</div>
+								<!-- /.contact-item -->
+							</div>
+							<!-- /.col .col-4 -->
+							<div class="col col-4">
+								<div class="contact-item">
+									<div class="rhomb-icon black-icon">
+										<i class="fas fa-phone"></i>
+									</div>
+									<!-- /.rhomb-icon black-icon -->
+									<div class="contact-item-content">
+										<span class="contact-title">Call us</span>
+										<span class="contact-data">+380973858207</span>
+									</div>
+									<!-- /.contact-item-content -->
+								</div>
+								<!-- /.contact-item -->
+							</div>
+							<!-- /.col .col-4 -->
+						</div>
+						<!-- /.row -->
+						<div class="contact-form">
+							<div class="form-row">
+								<div class="form-col">
+									<input type="text" name="user-name" class="form-control" placeholder="Name">
+									<input type="email" name="user-email" class="form-control" placeholder="Email">
+								</div>
+								<!-- /.form-col -->
+								<div class="form-col">
+									<textarea name="user-message" class="form-control" placeholder="Message"></textarea>
+								</div>
+								<!-- /.form-col -->
+							</div>
+							<!-- /.form-row -->
+							<div class="form-submit">
+								<div class="form-info"></div>
+								<!-- /.form-info -->
+								<button type="submit" class="btn btn-medium">Submit message</button>
+							</div>
+							<!-- /.form-submit -->
+						</div>
+						<!-- /.contact-form -->
+					</div>
+					<!-- /.col .col-8 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.default-section .contacts -->
+		<div class="map-container">
+			<div id="map"></div>
+			<!-- /#map -->
+			<div class="on-map-block"></div>
+			<!-- /.on-map-block -->
+		</div>
+		<!-- /.map-container -->
+		<!-- AIzaSyAc4vCAYgAacs290tk2tiE6zb_YaOb42Lc -->
 	</div>
 	<!-- /#main -->
 
@@ -611,6 +703,12 @@
 
 	<!-- Slick slider -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+	<!-- Google maps api -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc4vCAYgAacs290tk2tiE6zb_YaOb42Lc&callback=initMap" async defer></script>
+	
+	<!-- Google map init -->
+	<script src="js/google-maps.js"></script>
 
 	<!-- Init plugins -->
 	<script src="js/init.js"></script>
