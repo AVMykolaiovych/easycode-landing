@@ -257,7 +257,7 @@ button {
 	background: url("../img/main-bg.jpg") no-repeat center / cover; 
 }
 .inner-content {
-	max-width: 980px;
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -271,7 +271,7 @@ button {
 	line-height: 1;
 	margin-bottom: 100px;
 	letter-spacing: 1.7em;
-	text-indent: 1.5em;
+	text-indent: 1.7em;
 	text-transform: uppercase;
 }
 .inner-content p {
@@ -407,7 +407,7 @@ button {
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.start-project h3 {
+.start-project .title {
 	line-height: 26px;
 	margin-bottom: 20px;
 }
