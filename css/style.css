@@ -169,14 +169,12 @@ textarea {
 	line-height: 1em;
 	cursor: pointer;
 }
-
 /* dark button style start, both the same */
 .btn.btn-default {
 	background-color: rgba(0, 0, 0, .8);
 	padding: 11px 16px;
 }
 /* dark button style end */
-
 /* read more link style start */
 .btn.btn-small {
 	font-size: 11px;
@@ -185,7 +183,6 @@ textarea {
 	color: #777;
 }
 /* read more link style end */
-
 /* lightgrey button style start, both the same */
 .btn.btn-medium {
 	padding: 13px 40px;
@@ -193,7 +190,6 @@ textarea {
 	color: #111;
 }
 /* lightgrey button style end */
-
 .title {
 	font-size: 18px;
 	color: #111;
@@ -328,7 +324,6 @@ textarea.form-control {
 	color: rgba(255, 255, 255, .75);
 }
 /* header style end */
-
 /* main style start */
 .inner {
 	position: relative;
@@ -361,7 +356,6 @@ textarea.form-control {
 	line-height: 1;
 }
 /* main style end */
-
 /* about studio start */
 .about-studio .row + .row {
 	margin-top: 100px;
@@ -383,7 +377,6 @@ textarea.form-control {
 	font-size: 12px;
 }
 /* about studio end */
-
 /* services start */
 .services h3 {
 	margin-bottom: 120px;
@@ -415,7 +408,6 @@ textarea.form-control {
 	margin-top: 30px;
 }
 /* services end */
-
 /* lets talk start */
 .lets-talk-wrapper {
 	padding-top: 140px;
@@ -433,7 +425,6 @@ textarea.form-control {
 	margin-bottom: 40px;
 }
 /* lets talk end */
-
 /* portfolio start */
 .portfolio.default-section {
 	padding-bottom: 0;
@@ -481,7 +472,6 @@ textarea.form-control {
     filter: grayscale(0);
 }
 /* portfolio end */
-
 /* start project start */
 .start-project {
 	padding-top: 70px;
@@ -492,7 +482,6 @@ textarea.form-control {
 	margin-bottom: 20px;
 }
 /* start project end */
-
 /* why chose us start */
 .why-choose-us .row + .row {
 	margin-top: 85px;
@@ -581,96 +570,6 @@ textarea.form-control {
 	transform: scale(1.3);
 }
 /* reviews carousel end */
-
-/* contacts start */
-.contact-item .rhomb-icon {
-	vertical-align: middle;
-}
-.contact-item-content {
-	display: inline-block;
-	margin-left: 15px;
-	vertical-align: middle;
-}
-.contact-item-content span {
-	display: block;
-}
-.contact-title {
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: .3em;
-	color: #777;
-	line-height: 1.5em;
-}
-.contact-data {
-	font-size: 15px;
-	line-height: 24px;
-	color: #444;
-}
-.form-row {
-	margin: 0 -5px;
-	overflow: hidden;
-}
-.form-col {
-	width: 50%;
-	float: left;
-	padding: 0 5px;
-}
-.contact-form {
-	margin-top: 80px;
-}
-.contact-form .form-submit {
-	margin-top: 20px;
-}
-.contact-form .form-info {
-	line-height: 36px;
-}
-.contact-form .form-control + .form-control {
-	margin-top: 10px;
-}
-.form-info + button {
-	float: right;
-}
-/* contacts end */
-/* map start */
-.map-container {
-	position: relative;
-}
-#map {
-	width: 100%;
-	height: 410px;
-}
-.on-map-block {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 1;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, .9);
-}
-.map-container:hover .on-map-block {
-	opacity: 0;
-}
-.map-wrapper {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-.map-wrapper .rhomb-icon {
-	margin-bottom: 30px;
-}
-.map-wrapper .title i {
-	font-size: 12px;
-	font-weight: 600;
-}
-.map-wrapper .title {
-	font-size: 16px;
-	letter-spacing: .3em;
-	color: rgba(255, 255, 255, .75)
-}
-/* map end */
 /* latest news start */
 .latest-news-wrapper {
     line-height: 0;
@@ -746,6 +645,96 @@ textarea.form-control {
 	text-align: center;
 }
 /* stay informed end */
+/* contact start */
+.contact-item .rhomb-icon {
+	vertical-align: middle;
+}
+.contact-item-content {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+.contact-item-content span {
+	display: block;
+}
+.contact-title {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	color: #777;
+	line-height: 1.5em;
+}
+.contact-data {
+	font-size: 15px;
+	line-height: 24px;
+	color: #444;
+}
+.form-row {
+	margin: 0 -5px;
+	overflow: hidden;
+}
+.form-col {
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+.contact-form {
+	margin-top: 80px;
+}
+.contact-form .form-submit {
+	margin-top: 20px;
+}
+.contact-form .form-info {
+	line-height: 36px;
+}
+.contact-form .form-control + .form-control {
+	margin-top: 10px;
+}
+.form-info + button {
+	float: right;
+}
+/* contact end */
+/* map start */
+.map-container {
+	position: relative;
+}
+#map {
+	width: 100%;
+	height: 410px;
+}
+.on-map-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .9);
+}
+.map-container:hover .on-map-block {
+	opacity: 0;
+}
+.map-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.map-wrapper .rhomb-icon {
+	margin-bottom: 30px;
+}
+.map-wrapper .title i {
+	font-size: 12px;
+	font-weight: 600;
+}
+.map-wrapper .title {
+	font-size: 16px;
+	letter-spacing: .3em;
+	color: rgba(255, 255, 255, .75);
+	margin-bottom: 0;
+}
+/* map end */
 /* footer start */
 .footer {
 	padding: 140px 0 60px;
