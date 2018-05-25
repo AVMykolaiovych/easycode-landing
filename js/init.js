@@ -11,4 +11,10 @@ $(function() {
 		autoplay: false,
 		autoplaySpeed: 5000,
 	});
+
+	// init slicknav
+	$('.header-nav-menu').slicknav({
+		appendTo: ".header .container-fluid",
+		label: "",
+	});
 });
