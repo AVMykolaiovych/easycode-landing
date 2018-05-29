@@ -10,6 +10,8 @@ $(function() {
 		dots: true,
 		autoplay: false,
 		autoplaySpeed: 5000,
+		prevArrow: '<div class="slick-prev slick-arrow"><div class="carousel-button"><i class="fa fa-chevron-left"></i></div></div>',        
+		nextArrow: '<div class="slick-next slick-arrow"><div class="carousel-button"><i class="fa fa-chevron-right"></i></div></div>',
 	});
 
 	// init slicknav
@@ -17,4 +19,22 @@ $(function() {
 		appendTo: ".header .container-fluid",
 		label: "",
 	});
+
+	// wow init
+	new WOW().init();
+
+	//Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 });

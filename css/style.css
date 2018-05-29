@@ -45,6 +45,7 @@ body {
 	color: #777;
 	margin: 0;
 	min-width: 320px;
+	overflow-x: hidden;
 }
 a {
     color: inherit;
@@ -407,7 +408,7 @@ textarea {
 	background-color: #111;
 }
 .rhomb-icon.white-icon {
-	color: #111;
+	color: #222;
 	background-color: #fff;
 }
 .rhomb-icon.transparent-icon {
@@ -537,6 +538,20 @@ textarea.form-control {
 	color: rgba(255, 255, 255, .68);
 	line-height: 1;
 }
+.inner-wrapper {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	cursor: pointer;
+}
+.inner-wrapper .rhomb-icon .fas {
+    vertical-align: bottom;
+    margin-left: 7px;
+	margin-bottom: 2px;
+	font-weight: 600;
+}
 @media (max-width: 991px) {
 	.inner {
 		height: auto;
@@ -573,6 +588,72 @@ textarea.form-control {
 }
 .team-item-role {
 	font-size: 12px;
+}
+.team-item-photo {
+	line-height: 0;
+	height: 450px;
+	position: relative;
+	perspective: 2000px;
+}
+.team-item-photo:hover  .team-item-front {
+	transform: rotateY(180deg);
+}
+.team-item-photo:hover  .team-item-skills {
+	transform: rotateY(360deg);
+}
+.team-item-skills {
+	padding: 40px;
+	background-color: #131313;
+	transform: rotateY(180deg);
+	/* background-image: url('../img/skills-bg.jpg'); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+}
+.team-item-skills .title {
+	margin-bottom: 30px;
+}
+.team-item-skills-subtitle {
+	font-family: 'open_sansregular', sans-serif;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, .5);
+	margin-bottom: 45px;
+}
+.skills-wrapper {
+	margin-bottom: 20px;
+}
+.skills-wrapper span {
+	display: block;
+	font-family: 'open_sansregular', sans-serif;
+	font-size: 11px;
+	line-height: 2.5em;
+	letter-spacing: .2em;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+}
+.container-for-flip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backface-visibility: hidden;
+	transition: all .8s ease;
+}
+.progress-bar {
+	height: 7px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .15);
+	position: relative;
+}
+.progress-bar .progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .75);
+	transition: all .2s linear;
+
 }
 @media (max-width: 991px) {
 	.team-item {
@@ -779,6 +860,9 @@ textarea.form-control {
 /* why chose us end */
 
 /* reviews carousel start */
+.reviews {
+	overflow: hidden;
+}
 .reviews-carousel {
 	padding: 140px 0;
 }
@@ -807,15 +891,44 @@ textarea.form-control {
 }
 .slick-arrow {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
 	z-index: 1;
+	height: 100%;
+	width: 90px;
+	cursor: pointer;
 }
 .slick-arrow.slick-prev {
 	left: 0;
 }
 .slick-arrow.slick-next {
 	right: 0;
+}
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background-color: #fff;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	margin-top: -31.5px;
+	margin-left: -32px;
+}
+.slick-next.slick-arrow .carousel-button {
+	margin-right: -32px;
+	right: 0;
+}
+.slick-arrow .carousel-button .fa {
+	position: absolute;
+	transform: rotate(-45deg);
+	font-size: 10px;
+}
+.slick-prev.slick-arrow .carousel-button .fa{
+	top: 14px;
+	right: 16px;
+}
+.slick-next.slick-arrow .carousel-button .fa{
+	bottom: 14px;
+	left: 16px;
 }
 .slick-dots {
 	position: absolute;
@@ -1104,7 +1217,7 @@ textarea.form-control {
 	margin: auto;
 	margin-bottom: 110px;
 }
-.footer .social-list li {
+.footer .social-list li {   
 	float: left;
 }
 .footer .social-list li a {
@@ -1142,5 +1255,60 @@ textarea.form-control {
 	color: #999;
 }
 /* footer end */
+
+/* animate start */
+.animate-opacity {
+	opacity: 0;
+	animation: opacity .3s ease-in .5s forwards;
+
+}
+.animate-scale {
+	transform: scale(0);
+	animation: scale .5s ease-in 1s forwards;
+}
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* animate end */
+
+/* scroll to top start */
+.scrollToTop {
+	display: none;
+	position: fixed;
+    bottom: 30px;
+    right: 30px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent #c6c6c6 transparent;
+    color: #fff;
+    text-decoration: none;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+.scrollToTop .fas {
+	font-weight: 600;
+	margin-left: -4px;
+	font-size: 10px;
+}
+/* scroll to top end */
 
 /* ===== Custom style end ===== */
