@@ -605,9 +605,6 @@ textarea.form-control {
 	padding: 40px;
 	background-color: #131313;
 	transform: rotateY(180deg);
-	/* background-image: url('../img/skills-bg.jpg'); */
-	/* background-repeat: no-repeat; */
-	/* background-size: cover; */
 }
 .team-item-skills .title {
 	margin-bottom: 30px;
@@ -1254,6 +1251,29 @@ textarea.form-control {
 	font-size: 13px;
 	color: #999;
 }
+
+/* scroll to top start */
+.scrollToTop {
+	display: none;
+	position: fixed;
+    bottom: 30px;
+    right: 30px;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: transparent;
+    color: #c6c6c6;
+    text-decoration: none;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+.scrollToTop .fas {
+	font-size: 20px;
+}
+/* scroll to top end */
+
 /* footer end */
 
 /* animate start */
@@ -1286,29 +1306,5 @@ textarea.form-control {
 	}
 }
 /* animate end */
-
-/* scroll to top start */
-.scrollToTop {
-	display: none;
-	position: fixed;
-    bottom: 30px;
-    right: 30px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 20px 20px 20px;
-	border-color: transparent transparent #c6c6c6 transparent;
-    color: #fff;
-    text-decoration: none;
-}
-.scrollToTop:hover{
-    text-decoration:none;
-}
-.scrollToTop .fas {
-	font-weight: 600;
-	margin-left: -4px;
-	font-size: 10px;
-}
-/* scroll to top end */
 
 /* ===== Custom style end ===== */
