@@ -593,6 +593,7 @@ textarea.form-control {
 	line-height: 0;
 	height: 450px;
 	position: relative;
+	-webkit-perspective: 2000px;
 	perspective: 2000px;
 }
 .team-item-photo:hover  .team-item-front {
@@ -634,7 +635,10 @@ textarea.form-control {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	-webkit-transition: all .8s ease;
+	-o-transition: all .8s ease;
 	transition: all .8s ease;
 }
 .progress-bar {
@@ -1258,8 +1262,8 @@ textarea.form-control {
 	position: fixed;
     bottom: 30px;
     right: 30px;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	vertical-align: middle;
 	text-align: center;
 	background-color: transparent;
@@ -1270,7 +1274,7 @@ textarea.form-control {
     text-decoration:none;
 }
 .scrollToTop .fas {
-	font-size: 20px;
+	font-size: 43px;
 }
 /* scroll to top end */
 
