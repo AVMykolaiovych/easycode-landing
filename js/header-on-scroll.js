@@ -31,14 +31,24 @@ function onScroll(e) {
 
 $(window).on('scroll', onScroll);
 
-// Scroll to element
-const scrollBtn = $('[data-scroll]');
+function scrollTo() {
+	// Scroll to element
+	const scrollBtn = $('[data-scroll]');
 
-function onClick(e) {
-    e.preventDefault();
-    const target = $(this).attr('data-scroll');
-    const dist = $(target).offset().top;
-    $('html, body').animate({ scrollTop: dist }, 1000, 'swing');
+	function onScroll(e) {
+		e.preventDefault();
+
+		// Close slick nav
+		$('.header-nav').slicknav('close');
+		let target = $(this).attr('data-scroll');
+		let dist = $(target).offset().top;
+		$('html, body').animate({ scrollTop: dist }, 1000, 'swing');
+	}
+
+	scrollBtn.on('click', onScroll);
 }
 
-scrollBtn.on('click', onClick);
+
+$(window).on('load', scrollTo);
+
+	
