@@ -996,7 +996,7 @@ textarea.form-control {
 	display: inline-block;
 	line-height: 1em;
 }
-.latest-news-wrapper a {
+.latest-news-wrapper a > h3 {
 	display: block;
 	font-size: 11px;
 	font-family: "dosisregular", sans-serif;
@@ -1210,6 +1210,7 @@ textarea.form-control {
 
 /* footer start */
 .footer {
+	background-color: #f8f8f8;
 	padding: 140px 0 60px;
 }
 .footer-logo {
@@ -1248,17 +1249,18 @@ textarea.form-control {
 }
 .footer-copyright span{
 	display: block;
-	font-family: 'open_sansregular', sans-serif;
 	line-height: 24px;
 }
 .footer-copyright span:first-child{
 	font-size: 15px;
+	font-family: 'dosisregular', sans-serif;
 	color: #111;
 	letter-spacing: .3em;
 	text-transform: uppercase;
 }
 .footer-copyright span:last-child{
 	font-size: 13px;
+	font-family: 'open_sansregular', sans-serif;
 	color: #999;
 }
 
