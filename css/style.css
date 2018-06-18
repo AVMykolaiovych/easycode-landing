@@ -567,6 +567,12 @@ textarea.form-control {
 		text-indent: .7em;
 	}
 }
+@media (max-width: 576px) {
+	.inner-content h1 {
+		letter-spacing: .2em;
+		text-indent: .2em;
+	}
+}
 /* main style end */
 
 /* about studio start */
@@ -975,7 +981,7 @@ textarea.form-control {
 }
 @media (max-width: 576px) {
 	.review-wrapper > p {
-		max-width: 190px;
+		max-width: 220px;
 		font-size: 14px;
 	}
 }
